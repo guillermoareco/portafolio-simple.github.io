@@ -13,26 +13,34 @@
 <body>
     <nav class="glass-nav">
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#home" class="active">Inicio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     
     <main>
-        <section class="hero" style="min-height: 60vh;">
+        <section class="hero" id="home" style="min-height: 60vh;">
             <div class="hero-content">
                 <h1 class="hero-title">Bienvenido a la pagina de <span class="highlight">Guillermo Areco</span></h1>
             </div>
             <div class="hero-background"></div>
         </section>
-
-        <div style="text-align: center; margin-top: 2rem; position: relative; z-index: 1;">
+        
+        <section id="projects" style="padding-top: 6rem;">
+            <div style="text-align: center; position: relative; z-index: 1;">
             <h2 style="font-size: 2.5rem; font-weight: 800;">Mis Proyectos Web</h2>
-            <p style="color: var(--text-muted); margin-top: 0.5rem;">Una selección de mis trabajos recientes</p>
-        </div>
+            <p style="color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 2rem;">Una selección de mis trabajos recientes</p>
+            
+            <ul class="nav-links" style="justify-content: center; margin-bottom: 3rem; gap: 1.5rem;">
+                <li><a href="javascript:void(0)" class="active">Todos</a></li>
+                <li><a href="javascript:void(0)">Frontend</a></li>
+                <li><a href="javascript:void(0)">Backend</a></li>
+                <li><a href="javascript:void(0)">Diseño</a></li>
+            </ul>
+            </div>
 
-        <section class="features" id="proyectos" style="padding-top: 3rem;">
+            <div class="features" style="padding-top: 1rem;">
             <div class="feature-card">
                 <div class="feature-icon">🛒</div>
                 <h3 class="feature-title">1. E-commerce Clásico</h3>
