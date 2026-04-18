@@ -11,7 +11,12 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Adjusts for the fixed navbar */
+    scroll-padding-top: 130px; /* Adjusts for the fixed navbar */
+}
+
+/* Fallback for anchor links to prevent content blocking by fixed header */
+[id] {
+    scroll-margin-top: 130px;
 }
 
 * {
@@ -30,7 +35,7 @@ body {
 
 /* Glassmorphism Navigation */
 .glass-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -98,7 +103,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 130px 20px 40px; /* Top padding avoids fixed header, bottom balances it */
     overflow: hidden;
 }
 
