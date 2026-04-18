@@ -9,6 +9,11 @@
     --glass-border: rgba(255, 255, 255, 0.08);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Adjusts for the fixed navbar */
+}
+
 * {
     margin: 0;
     padding: 0;
